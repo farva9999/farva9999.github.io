@@ -1,0 +1,237 @@
+
+/* global */
+:root{
+    --primary: #EA40A4;
+    --light: #EEE;
+    --dark: #313154;
+    --danger: #ff5b57;
+    --todobg: rgb(224, 224, 224);
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+    --glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+
+        background-color: var(--light);
+}
+
+
+.topsection{
+display: flex;
+flex-flow: wrap;
+justify-content: space-around;
+margin-bottom: 40px;
+}
+
+.lefttop{
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.338);
+    border-radius: 1rem;
+    flex: 0 0 45%;
+}
+
+.righttop{
+    padding: 10px;
+    flex: 0 0 45%;
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.338);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quickstretchvideo{
+   
+}
+
+.timercontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.timer{
+    font-size: 80px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+
+}
+
+.buttons > button{
+    font-size: 24px;
+    background-color: rgba(0, 40, 202, 0.829);
+    color: white;
+    border-radius: 6px;
+    border-style: none;
+    padding: 4px;
+    width: 10rem;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.start:disabled{
+    background-color: var(--dark);
+}
+
+
+h2{
+    text-align: center;
+    font-size: 36px;
+}
+.bottomsection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottomleft{
+    flex: 0 0 45%;
+    border: 2px solid grey;
+    border-radius: 1rem;
+}
+
+.notesarea{
+    display: flex;
+}
+
+
+/* To do list formatting*/
+    #todod-list-header{
+        text-align: center;
+    }
+
+    #new-todoform{
+        display: flex;
+        flex-direction: column;
+    }
+
+/*to do list add new item*/
+    /*to do list entry form*/
+    #content{
+        height: 2rem;
+        margin: 1rem;
+        border-radius: 0.5rem;
+        font-size: 24px;
+    }
+
+    /*to do list submit button*/
+    #submit-new-task-button{
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        font-size: 24px;
+        border-radius: 0.5rem;
+        border-style: none;
+        padding: 1rem 1.5rem;
+        color: #EEE;
+        background-color: var(--primary);
+        box-shadow: var(--shadow);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+    }
+
+    #submit-new-task-button:hover{
+        opacity: 0.75;
+    }
+    /*to do list header*/
+   h3{
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+        /*entire list of todo items*/
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+            align-items: center;
+            padding: 1rem;
+
+            border-radius: 1rem;
+            margin: 10px;
+    
+        }
+
+        
+    /*individual cards for todo list*/
+    .todo-item{
+        display: flex;
+        margin: 0.25rem;
+        align-items: center;
+        background-color: var(--todobg);
+        border-radius: 1rem;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+ 
+
+    input[type=checkbox]{
+        justify-content: center;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 2px;
+    }
+
+    .todo-content > input{
+        height: 1rem;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: var(--todobg);
+        border-style: none;
+        font-size: 1rem;
+        padding: 0.1rem;
+    }
+
+    .actions{
+        display: flex;
+    }
+    .actions > button{
+        height: auto;
+        width: auto;
+        font-size: 1rem;
+        margin: 0 1rem 0 1rem;
+
+    }
+
+    .edit{
+        background-color: var(--primary);
+
+    }
+    .delete{
+        background-color: var(--danger);
+
+    }
+
+    .notes-area{
+        margin: 1rem;
+    }
+
+
+.bottomright{
+    display: block;
+
+    flex: 0 0 45%;
+    border: 2px solid grey;
+    border-radius: 1rem;
+}
+
+#chillhop{
+    margin: 10%;
+    width: 80%;
+}
+
+.accordion{
+    width: 90% ;
+}
+
+.accordion-body{
+    justify-self: center;
+}
